@@ -49,3 +49,50 @@ A full-stack e-commerce website showcasing my development skills. The platform a
 3. **Order History**
    - View past orders
    - Order status tracking
+  
+4. ## Database Schema
+
+### Users
+- id (PK)
+- email (string, unique)
+- password (hashed)
+- firstName (string)
+- lastName (string)
+- createdAt (datetime)
+- updatedAt (datetime)
+
+### Products
+- id (PK)
+- name (string)
+- description (text)
+- price (decimal)
+- stock (integer)
+- imageUrl (string)
+- category (string)
+- createdAt (datetime)
+- updatedAt (datetime)
+
+### CartItems
+- id (PK)
+- userId (FK to Users)
+- productId (FK to Products)
+- quantity (integer)
+- createdAt (datetime)
+- updatedAt (datetime)
+
+### Orders
+- id (PK)
+- userId (FK to Users)
+- total (decimal)
+- status (string)
+- shippingAddress (text)
+- paymentMethod (string)
+- createdAt (datetime)
+- updatedAt (datetime)
+
+### OrderItems
+- id (PK)
+- orderId (FK to Orders)
+- productId (FK to Products)
+- quantity (integer)
+- price (decimal)
