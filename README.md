@@ -296,36 +296,28 @@ ecommerce-showcase/
 ## 📸 Screenshots
 
 ### Home Page - Product Listing
-![Home Page](<img width="2550" height="1275" alt="Image" src="https://github.com/user-attachments/assets/0bb2656e-e266-498e-9667-654b1db42ac7" />)
+![Home Page](https://github.com/user-attachments/assets/0bb2656e-e266-498e-9667-654b1db42ac7)
 *Browse all available products with images and prices*
 
 ### Product Detail Modal
-![Product Detail](<img width="2558" height="1269" alt="Image" src="https://github.com/user-attachments/assets/8359be61-4c36-48eb-b475-cb225c728dff" />)
+![Product Detail](https://github.com/user-attachments/assets/8359be61-4c36-48eb-b475-cb225c728dff)
 *View detailed product information and add to cart*
 
 ### Shopping Cart
-![Shopping Cart](<img width="2556" height="1269" alt="Image" src="https://github.com/user-attachments/assets/56159486-9317-454e-b855-172269145e73" />)
+![Shopping Cart](https://github.com/user-attachments/assets/56159486-9317-454e-b855-172269145e73)
 *Manage cart items with quantity updates and removal*
 
 ### Checkout Process
-![Checkout](<img width="2559" height="1271" alt="Image" src="https://github.com/user-attachments/assets/9760b574-e753-4b8f-971c-e5259392c730" />)
+![Checkout](https://github.com/user-attachments/assets/9760b574-e753-4b8f-971c-e5259392c730)
 *Complete shipping information and place order*
 
 ### Order Tracking
-![Order Tracking](<img width="2559" height="1272" alt="Image" src="https://github.com/user-attachments/assets/d5036069-ec66-4323-9b43-45318c078dd9" />)
+![Order Tracking](https://github.com/user-attachments/assets/d5036069-ec66-4323-9b43-45318c078dd9)
 *Visual timeline showing order status progression*
 
 ---
 
-<img width="2550" height="1275" alt="Image" src="https://github.com/user-attachments/assets/0bb2656e-e266-498e-9667-654b1db42ac7" />
 
-<img width="2558" height="1269" alt="Image" src="https://github.com/user-attachments/assets/8359be61-4c36-48eb-b475-cb225c728dff" />
-
-<img width="2556" height="1269" alt="Image" src="https://github.com/user-attachments/assets/56159486-9317-454e-b855-172269145e73" />
-
-<img width="2559" height="1271" alt="Image" src="https://github.com/user-attachments/assets/9760b574-e753-4b8f-971c-e5259392c730" />
-
-<img width="2559" height="1272" alt="Image" src="https://github.com/user-attachments/assets/d5036069-ec66-4323-9b43-45318c078dd9" />
 
 
 
