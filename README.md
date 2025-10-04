@@ -2,12 +2,6 @@
 
 > A full-stack e-commerce web application demonstrating modern web development skills
 
-[![Next.js](https://img.shields.io/badge/Next.js-13-black?style=flat&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/Next.js-13-black?style=flat&logo=next.js)](https://react.dev/)
-[![Express](https://img.shields.io/badge/Express-4.x-green?style=flat&logo=express)](https://expressjs.com/)
-[![Prisma](https://img.shields.io/badge/Prisma-5.x-2D3748?style=flat&logo=prisma)](https://www.prisma.io/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.x-blue?style=flat&logo=mysql)](https://www.mysql.com/)
-
 ---
 
 ## 📋 Table of Contents
