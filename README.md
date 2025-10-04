@@ -1,7 +1,7 @@
 # E-Commerce
 A E-Commerce website.
 ## Project Overview
-A full-stack e-commerce website showcasing my development skills. The platform allows users to browse products, with additional features for registered users like shopping cart functionality and payment processing.
+A full-stack e-commerce website showcasing my development skills. The platform allows users to browse products, with additional features for registered users like shopping cart functionality order tracking and posting products.
 
 ## Tech Stack
 
