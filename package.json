@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce-showcase",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev -w client",
+    "dev:server": "npm run dev -w server",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server"
+  },
+  "devDependencies": {
+    "prisma": "^5.22.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "dotenv": "^17.2.3"
+  }
+}

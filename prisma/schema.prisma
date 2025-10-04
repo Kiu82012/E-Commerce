@@ -1,0 +1,79 @@
+// Prisma schema for MySQL via XAMPP
+// After setting DATABASE_URL in server/.env, run:
+//   npx prisma migrate dev --name init
+//   npx prisma generate
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../server/node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  email     String    @unique
+  password  String
+  firstName String
+  lastName  String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  cartItems CartItem[]
+  orders    Order[]
+  postedProducts Product[] @relation("UserProducts")
+}
+
+model Product {
+  id          Int       @id @default(autoincrement())
+  name        String
+  description String
+  price       Decimal   @db.Decimal(10,2)
+  imageUrl    String
+  category    String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  cartItems   CartItem[]
+  orderItems  OrderItem[]
+  // Optional owner for user-posted products
+  ownerId     Int?
+  owner       User?     @relation("UserProducts", fields: [ownerId], references: [id])
+
+  @@index([ownerId])
+}
+
+model CartItem {
+  id        Int      @id @default(autoincrement())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  product   Product  @relation(fields: [productId], references: [id])
+  productId Int
+  quantity  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Order {
+  id              Int         @id @default(autoincrement())
+  user            User        @relation(fields: [userId], references: [id])
+  userId          Int
+  total           Decimal     @db.Decimal(10,2)
+  status          String      @default("pending")
+  shippingAddress String
+  paymentMethod   String
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+  items           OrderItem[]
+}
+
+model OrderItem {
+  id        Int      @id @default(autoincrement())
+  order     Order    @relation(fields: [orderId], references: [id])
+  orderId   Int
+  product   Product  @relation(fields: [productId], references: [id])
+  productId Int
+  quantity  Int
+  price     Decimal  @db.Decimal(10,2)
+}
